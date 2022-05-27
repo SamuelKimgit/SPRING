@@ -1,0 +1,86 @@
+[2022-05-27 09:42:47.302] DEBUG SimpleConnectionMaker.makeNewConnection(SimpleConnectionMaker.java:27) - ================================
+[2022-05-27 09:42:47.304] DEBUG SimpleConnectionMaker.makeNewConnection(SimpleConnectionMaker.java:28) - =connection=oracle.jdbc.driver.T4CConnection@59d016c9
+[2022-05-27 09:42:47.304] DEBUG SimpleConnectionMaker.makeNewConnection(SimpleConnectionMaker.java:29) - ================================
+[2022-05-27 09:42:47.304] DEBUG UserDao.add(UserDao.java:112) - ================================
+[2022-05-27 09:42:47.304] DEBUG UserDao.add(UserDao.java:113) - param: UserVO [uId=p05, name=김무엘5, passwd=4321]
+[2022-05-27 09:42:47.304] DEBUG UserDao.add(UserDao.java:114) - SQL:
+ INSERT INTO hr_member (  
+     u_id,                
+     name,                
+     passwd               
+ ) VALUES (               
+     ?,                   
+     ?,                   
+     ?                    
+ )                        
+
+[2022-05-27 09:42:47.304] DEBUG UserDao.add(UserDao.java:115) - ================================
+[2022-05-27 09:42:47.390] DEBUG UserDao.add(UserDao.java:125) - ================================
+[2022-05-27 09:42:47.391] DEBUG UserDao.add(UserDao.java:126) - =flag=1
+[2022-05-27 09:42:47.391] DEBUG UserDao.add(UserDao.java:127) - ================================
+[2022-05-27 09:42:47.393] DEBUG UserDaoTest.add(UserDaoTest.java:36) - =======================
+[2022-05-27 09:42:47.393] DEBUG UserDaoTest.add(UserDaoTest.java:37) - =등록성공=
+[2022-05-27 09:42:47.393] DEBUG UserDaoTest.add(UserDaoTest.java:38) - =======================
+[2022-05-27 09:42:47.457] DEBUG SimpleConnectionMaker.makeNewConnection(SimpleConnectionMaker.java:27) - ================================
+[2022-05-27 09:42:47.458] DEBUG SimpleConnectionMaker.makeNewConnection(SimpleConnectionMaker.java:28) - =connection=oracle.jdbc.driver.T4CConnection@5032714f
+[2022-05-27 09:42:47.458] DEBUG SimpleConnectionMaker.makeNewConnection(SimpleConnectionMaker.java:29) - ================================
+[2022-05-27 09:42:47.458] DEBUG UserDao.get(UserDao.java:48) - =========================
+[2022-05-27 09:42:47.458] DEBUG UserDao.get(UserDao.java:49) - param: UserVO [uId=p05, name=김무엘5, passwd=4321]
+[2022-05-27 09:42:47.458] DEBUG UserDao.get(UserDao.java:50) - SQL:
+ SELECT         
+     u_id,      
+     name,      
+     passwd     
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-27 09:42:47.458] DEBUG UserDao.get(UserDao.java:51) - =========================
+[2022-05-27 09:42:47.498] DEBUG UserDao.get(UserDao.java:68) - =========================
+[2022-05-27 09:42:47.499] DEBUG UserDao.get(UserDao.java:69) - =outVO=UserVO [uId=p05, name=김무엘5, passwd=4321]
+[2022-05-27 09:42:47.499] DEBUG UserDao.get(UserDao.java:70) - =========================
+[2022-05-27 09:42:47.501] DEBUG UserDaoTest.get(UserDaoTest.java:22) - =======================
+[2022-05-27 09:42:47.501] DEBUG UserDaoTest.get(UserDaoTest.java:23) - =조회성공=
+[2022-05-27 09:42:47.501] DEBUG UserDaoTest.get(UserDaoTest.java:24) - =======================
+[2022-05-27 10:21:39.921] DEBUG NConnectionMaker.makeConnection(NConnectionMaker.java:22) - ================================
+[2022-05-27 10:21:39.923] DEBUG NConnectionMaker.makeConnection(NConnectionMaker.java:23) - =connection=oracle.jdbc.driver.T4CConnection@59d016c9
+[2022-05-27 10:21:39.923] DEBUG NConnectionMaker.makeConnection(NConnectionMaker.java:24) - ================================
+[2022-05-27 10:21:39.923] DEBUG UserDao.add(UserDao.java:112) - ================================
+[2022-05-27 10:21:39.923] DEBUG UserDao.add(UserDao.java:113) - param: UserVO [uId=p05, name=김무엘5, passwd=4321]
+[2022-05-27 10:21:39.924] DEBUG UserDao.add(UserDao.java:114) - SQL:
+ INSERT INTO hr_member (  
+     u_id,                
+     name,                
+     passwd               
+ ) VALUES (               
+     ?,                   
+     ?,                   
+     ?                    
+ )                        
+
+[2022-05-27 10:21:39.924] DEBUG UserDao.add(UserDao.java:115) - ================================
+[2022-05-27 10:21:40.009] DEBUG UserDao.add(UserDao.java:125) - ================================
+[2022-05-27 10:21:40.009] DEBUG UserDao.add(UserDao.java:126) - =flag=1
+[2022-05-27 10:21:40.009] DEBUG UserDao.add(UserDao.java:127) - ================================
+[2022-05-27 10:21:40.010] DEBUG UserDaoTest.add(UserDaoTest.java:38) - =======================
+[2022-05-27 10:21:40.010] DEBUG UserDaoTest.add(UserDaoTest.java:39) - =등록성공=
+[2022-05-27 10:21:40.011] DEBUG UserDaoTest.add(UserDaoTest.java:40) - =======================
+[2022-05-27 10:21:40.072] DEBUG NConnectionMaker.makeConnection(NConnectionMaker.java:22) - ================================
+[2022-05-27 10:21:40.072] DEBUG NConnectionMaker.makeConnection(NConnectionMaker.java:23) - =connection=oracle.jdbc.driver.T4CConnection@5032714f
+[2022-05-27 10:21:40.072] DEBUG NConnectionMaker.makeConnection(NConnectionMaker.java:24) - ================================
+[2022-05-27 10:21:40.073] DEBUG UserDao.get(UserDao.java:48) - =========================
+[2022-05-27 10:21:40.073] DEBUG UserDao.get(UserDao.java:49) - param: UserVO [uId=p05, name=김무엘5, passwd=4321]
+[2022-05-27 10:21:40.073] DEBUG UserDao.get(UserDao.java:50) - SQL:
+ SELECT         
+     u_id,      
+     name,      
+     passwd     
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-27 10:21:40.073] DEBUG UserDao.get(UserDao.java:51) - =========================
+[2022-05-27 10:21:40.109] DEBUG UserDao.get(UserDao.java:68) - =========================
+[2022-05-27 10:21:40.109] DEBUG UserDao.get(UserDao.java:69) - =outVO=UserVO [uId=p05, name=김무엘5, passwd=4321]
+[2022-05-27 10:21:40.109] DEBUG UserDao.get(UserDao.java:70) - =========================
+[2022-05-27 10:21:40.110] DEBUG UserDaoTest.get(UserDaoTest.java:24) - =======================
+[2022-05-27 10:21:40.110] DEBUG UserDaoTest.get(UserDaoTest.java:25) - =조회성공=
+[2022-05-27 10:21:40.110] DEBUG UserDaoTest.get(UserDaoTest.java:26) - =======================

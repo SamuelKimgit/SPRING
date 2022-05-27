@@ -2,8 +2,7 @@ select * from hr_member;
 
 --ют╥б
 INSERT INTO hr_member (
-    u_id,SPRING
-
+    u_id,
     name,
     passwd
 ) VALUES (
@@ -19,4 +18,4 @@ SELECT
     passwd
 FROM hr_member
 WHERE u_id =:USER_ID;
-SPRING
+
