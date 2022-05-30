@@ -1,0 +1,43 @@
+[2022-05-30 10:33:17.044] WARN  AbstractApplicationContext.refresh(AbstractApplicationContext.java:591) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userDao' defined in class path resource [applicationContext.xml]: Cannot resolve reference to bean 'connectionMaker' while setting bean property 'connectionMaker'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'connectionMaker' available
+[2022-05-30 10:33:54.815] WARN  AbstractApplicationContext.refresh(AbstractApplicationContext.java:591) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userDao' defined in class path resource [applicationContext.xml]: Cannot resolve reference to bean 'connectionMaker' while setting bean property 'connectionMaker'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'connectionMaker' available
+[2022-05-30 10:35:24.476] DEBUG UserDaoTest.<init>(UserDaoTest.java:23) - =======================
+[2022-05-30 10:35:24.479] DEBUG UserDaoTest.<init>(UserDaoTest.java:24) - =context=org.springframework.context.support.GenericXmlApplicationContext@2ed0fbae, started on Mon May 30 10:35:24 KST 2022
+[2022-05-30 10:35:24.480] DEBUG UserDaoTest.<init>(UserDaoTest.java:25) - =dao=com.pcwk.ehr.UserDao@482bce4f
+[2022-05-30 10:35:24.480] DEBUG UserDaoTest.<init>(UserDaoTest.java:26) - =======================
+[2022-05-30 10:35:24.977] DEBUG UserDao.add(UserDao.java:120) - ================================
+[2022-05-30 10:35:24.977] DEBUG UserDao.add(UserDao.java:121) - param: UserVO [uId=p05, name=김무엘5, passwd=4321]
+[2022-05-30 10:35:24.978] DEBUG UserDao.add(UserDao.java:122) - SQL:
+ INSERT INTO hr_member (  
+     u_id,                
+     name,                
+     passwd               
+ ) VALUES (               
+     ?,                   
+     ?,                   
+     ?                    
+ )                        
+
+[2022-05-30 10:35:24.978] DEBUG UserDao.add(UserDao.java:123) - ================================
+[2022-05-30 10:35:25.062] DEBUG UserDao.add(UserDao.java:133) - ================================
+[2022-05-30 10:35:25.062] DEBUG UserDao.add(UserDao.java:134) - =flag=1
+[2022-05-30 10:35:25.062] DEBUG UserDao.add(UserDao.java:135) - ================================
+[2022-05-30 10:35:25.063] DEBUG UserDaoTest.add(UserDaoTest.java:47) - =======================
+[2022-05-30 10:35:25.063] DEBUG UserDaoTest.add(UserDaoTest.java:48) - =등록성공=
+[2022-05-30 10:35:25.063] DEBUG UserDaoTest.add(UserDaoTest.java:49) - =======================
+[2022-05-30 10:35:25.126] DEBUG UserDao.get(UserDao.java:55) - =========================
+[2022-05-30 10:35:25.126] DEBUG UserDao.get(UserDao.java:56) - param: UserVO [uId=p05, name=김무엘5, passwd=4321]
+[2022-05-30 10:35:25.126] DEBUG UserDao.get(UserDao.java:57) - SQL:
+ SELECT         
+     u_id,      
+     name,      
+     passwd     
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-30 10:35:25.126] DEBUG UserDao.get(UserDao.java:58) - =========================
+[2022-05-30 10:35:25.165] DEBUG UserDao.get(UserDao.java:75) - =========================
+[2022-05-30 10:35:25.165] DEBUG UserDao.get(UserDao.java:76) - =outVO=UserVO [uId=p05, name=김무엘5, passwd=4321]
+[2022-05-30 10:35:25.165] DEBUG UserDao.get(UserDao.java:77) - =========================
+[2022-05-30 10:35:25.166] DEBUG UserDaoTest.get(UserDaoTest.java:34) - =======================
+[2022-05-30 10:35:25.166] DEBUG UserDaoTest.get(UserDaoTest.java:35) - =조회성공=
+[2022-05-30 10:35:25.166] DEBUG UserDaoTest.get(UserDaoTest.java:36) - =======================
