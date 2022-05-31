@@ -1,0 +1,64 @@
+[2022-05-31 12:34:54.149] DEBUG UserDaoAddStatement.makeStatement(UserDaoAddStatement.java:37) - ================================
+[2022-05-31 12:34:54.202] DEBUG UserDao.getCount(UserDao.java:50) - =========================
+[2022-05-31 12:34:54.202] DEBUG UserDao.getCount(UserDao.java:51) - param: UserVO [uId=p05, name=김무엘05, passwd=4321]
+[2022-05-31 12:34:54.202] DEBUG UserDao.getCount(UserDao.java:52) - SQL:
+ SELECT COUNT(*) AS cnt  
+ FROM hr_member          
+ WHERE u_id LIKE ?||'%'  
+
+[2022-05-31 12:34:54.203] DEBUG UserDao.getCount(UserDao.java:53) - =========================
+[2022-05-31 12:34:54.205] DEBUG UserDao.getCount(UserDao.java:64) - =count=2
+[2022-05-31 12:34:54.247] DEBUG UserDao.get(UserDao.java:154) - =========================
+[2022-05-31 12:34:54.247] DEBUG UserDao.get(UserDao.java:155) - param: UserVO [uId=p05, name=김무엘05, passwd=4321]
+[2022-05-31 12:34:54.247] DEBUG UserDao.get(UserDao.java:156) - SQL:
+ SELECT         
+     u_id,      
+     name,      
+     passwd     
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 12:34:54.247] DEBUG UserDao.get(UserDao.java:157) - =========================
+[2022-05-31 12:34:54.253] DEBUG UserDao.get(UserDao.java:179) - =outVO=UserVO [uId=p05, name=김무엘05, passwd=4321]
+[2022-05-31 12:34:54.294] DEBUG UserDao.get(UserDao.java:154) - =========================
+[2022-05-31 12:34:54.294] DEBUG UserDao.get(UserDao.java:155) - param: UserVO [uId=p050, name=김무엘050, passwd=4321]
+[2022-05-31 12:34:54.295] DEBUG UserDao.get(UserDao.java:156) - SQL:
+ SELECT         
+     u_id,      
+     name,      
+     passwd     
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 12:34:54.295] DEBUG UserDao.get(UserDao.java:157) - =========================
+[2022-05-31 12:34:54.295] DEBUG UserDao.get(UserDao.java:179) - =outVO=UserVO [uId=p050, name=김무엘050, passwd=4321]
+[2022-05-31 12:34:54.298] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:102) - =============
+[2022-05-31 12:34:54.298] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:103) - =9.tearDown()=
+[2022-05-31 12:34:54.298] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:104) - =============
+[2022-05-31 12:34:54.299] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:86) - =============
+[2022-05-31 12:34:54.300] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:87) - =0.setUp()=
+[2022-05-31 12:34:54.300] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:88) - =============
+[2022-05-31 12:34:54.300] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:92) - context: org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Tue May 31 12:34:53 KST 2022
+[2022-05-31 12:34:54.300] DEBUG JunitUserDaoTest.setUp(JunitUserDaoTest.java:93) - dao: com.pcwk.ehr.UserDao@64ec96c6
+[2022-05-31 12:34:54.300] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:75) - =============
+[2022-05-31 12:34:54.300] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:76) - =2.getFailure()=
+[2022-05-31 12:34:54.300] DEBUG JunitUserDaoTest.getFailure(JunitUserDaoTest.java:77) - =============
+[2022-05-31 12:34:54.343] DEBUG UserDaoDeleteAllStatement.makeStatement(UserDaoDeleteAllStatement.java:18) - ================================
+[2022-05-31 12:34:54.343] DEBUG UserDaoDeleteAllStatement.makeStatement(UserDaoDeleteAllStatement.java:19) - SQL:
+ DELETE FROM hr_member 
+
+[2022-05-31 12:34:54.343] DEBUG UserDaoDeleteAllStatement.makeStatement(UserDaoDeleteAllStatement.java:20) - ================================
+[2022-05-31 12:34:54.388] DEBUG UserDao.get(UserDao.java:154) - =========================
+[2022-05-31 12:34:54.388] DEBUG UserDao.get(UserDao.java:155) - param: UserVO [uId=p05, name=김무엘05, passwd=4321]
+[2022-05-31 12:34:54.388] DEBUG UserDao.get(UserDao.java:156) - SQL:
+ SELECT         
+     u_id,      
+     name,      
+     passwd     
+ FROM hr_member 
+ WHERE u_id = ? 
+
+[2022-05-31 12:34:54.389] DEBUG UserDao.get(UserDao.java:157) - =========================
+[2022-05-31 12:34:54.390] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:102) - =============
+[2022-05-31 12:34:54.390] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:103) - =9.tearDown()=
+[2022-05-31 12:34:54.390] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:104) - =============

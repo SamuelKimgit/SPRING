@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.pcwk.ehr.JunitUserDaoTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.738 s <<< FAILURE! - in com.pcwk.ehr.JunitUserDaoTest
+addAndGet(com.pcwk.ehr.JunitUserDaoTest)  Time elapsed: 0.986 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.pcwk.ehr.JunitUserDaoTest.addAndGet(JunitUserDaoTest.java:55)
+
