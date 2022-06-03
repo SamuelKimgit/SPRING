@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<bean id="sonySpeaker"   class="com.pcwk.ehr.SonySpeaker"/>
+	<bean id="appleSpeaker"  class="com.pcwk.ehr.AppleSpeaker"/>
+	
+	
+	<!-- azy-init="true" : bean을 바로 생성하지 않고 호출하는 시점에 생성한다. -->	
+	<!-- scope="singleton": 객체가 한개만 생성됨 (default)-->
+	<!-- scope="prototype": 객체가 호출될때 마다 새롭게 생성 -->
+	
+	<!-- p 네임스페이스를 사용하면 좀더 효율적으로 의존성을 주입 할수 있다. 
+	     p:변수명-ref="참조할 객체이름"
+	     p:변수명="설정할 값"
+	-->
+    <bean id="samsungTV" class="com.pcwk.ehr.SamsungTV"  p:speaker-ref="sonySpeaker" p:price="10000000"
+          init-method="initMethod"
+          destroy-method="destroyMethod">
+    </bean>
+  
+
+</beans>
