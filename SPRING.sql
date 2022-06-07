@@ -19,3 +19,14 @@ SELECT
 FROM hr_member
 WHERE u_id =:USER_ID;
 
+
+DELETE FROM hr_member
+WHERE
+        u_id = :v0
+    AND name = :v1
+    AND passwd = :v2
+    AND u_level = :v3
+    AND login = :v4
+    AND recommend = :v5
+    AND email = :v6
+    AND reg_dt = :v7;
