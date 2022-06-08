@@ -1,0 +1,418 @@
+[2022-06-08 14:12:48.689] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:237) - param: UserVO [uId=p050000, name=김무엘050000, passwd=4321, level=GOLD, login=52, recommend=31, email=rlatkandpf30@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@201b6b6f]
+[2022-06-08 14:12:48.696] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:238) - SQL:
+ SELECT          
+     u_id,       
+     name,       
+     passwd,     
+     u_level,    
+     login,		
+     recommend,	
+     email,		
+     TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt	
+ FROM hr_member 	
+ WHERE u_id = ? 	
+
+[2022-06-08 14:12:48.696] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:239) - =========================
+[2022-06-08 14:12:48.696] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:242) - Object param: [Ljava.lang.Object;@37f21974
+[2022-06-08 14:12:48.745] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:251) - =========================
+[2022-06-08 14:12:48.745] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:252) - =outVO=UserVO [uId=p050000, name=김무엘050000, passwd=4321, level=GOLD, login=52, recommend=31, email=rlatkandpf30@naver.com, regDt=2022-06-08 14:12:48, toString()=com.pcwk.ehr.UserVO@224b4d61]
+[2022-06-08 14:12:48.746] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:253) - =========================
+[2022-06-08 14:12:48.747] DEBUG JunitUserServiceTest.tearDown(JunitUserServiceTest.java:168) - =============
+[2022-06-08 14:12:48.747] DEBUG JunitUserServiceTest.tearDown(JunitUserServiceTest.java:169) - =9.tearDown()=
+[2022-06-08 14:12:48.747] DEBUG JunitUserServiceTest.tearDown(JunitUserServiceTest.java:170) - =============
+[2022-06-08 14:12:48.749] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:45) - =============
+[2022-06-08 14:12:48.749] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:46) - =0.setUp()=
+[2022-06-08 14:12:48.749] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:47) - =============
+[2022-06-08 14:12:48.749] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:64) - context: org.springframework.context.support.GenericApplicationContext@1dac5ef, started on Wed Jun 08 14:12:47 KST 2022
+[2022-06-08 14:12:48.749] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:65) - userService: com.pcwk.ehr.UserServiceImpl@6dd7b5a3
+[2022-06-08 14:12:48.749] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:66) - dao: com.pcwk.ehr.UserDaoImpl@6f3187b0
+[2022-06-08 14:12:48.749] DEBUG JunitUserServiceTest.upgradeLevels(JunitUserServiceTest.java:116) - =============
+[2022-06-08 14:12:48.749] DEBUG JunitUserServiceTest.upgradeLevels(JunitUserServiceTest.java:117) - =1.upgradeLevels()=
+[2022-06-08 14:12:48.749] DEBUG JunitUserServiceTest.upgradeLevels(JunitUserServiceTest.java:118) - =============
+[2022-06-08 14:12:48.749] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:65) - ================================
+[2022-06-08 14:12:48.750] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - param: UserVO [uId=p05, name=김무엘05, passwd=4321, level=BASIC, login=49, recommend=0, email=rlatkandpf30@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@63cd604c]
+[2022-06-08 14:12:48.750] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - SQL:
+ DELETE FROM hr_member 
+ WHERE u_id = ?        
+
+[2022-06-08 14:12:48.750] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - ================================
+[2022-06-08 14:12:48.750] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:71) - Object param: [Ljava.lang.Object;@40dd3977
+[2022-06-08 14:12:48.791] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - flag: 1
+[2022-06-08 14:12:48.791] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:65) - ================================
+[2022-06-08 14:12:48.791] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - param: UserVO [uId=p050, name=김무엘050, passwd=4321, level=BASIC, login=50, recommend=10, email=rlatkandpf30@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@62dae245]
+[2022-06-08 14:12:48.791] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - SQL:
+ DELETE FROM hr_member 
+ WHERE u_id = ?        
+
+[2022-06-08 14:12:48.791] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - ================================
+[2022-06-08 14:12:48.791] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:71) - Object param: [Ljava.lang.Object;@4b6579e8
+[2022-06-08 14:12:48.860] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - flag: 0
+[2022-06-08 14:12:48.860] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:65) - ================================
+[2022-06-08 14:12:48.860] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - param: UserVO [uId=p0500, name=김무엘0500, passwd=4321, level=SILVER, login=51, recommend=29, email=rlatkandpf30@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@591e58fa]
+[2022-06-08 14:12:48.860] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - SQL:
+ DELETE FROM hr_member 
+ WHERE u_id = ?        
+
+[2022-06-08 14:12:48.860] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - ================================
+[2022-06-08 14:12:48.860] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:71) - Object param: [Ljava.lang.Object;@3954d008
+[2022-06-08 14:12:49.001] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - flag: 0
+[2022-06-08 14:12:49.001] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:65) - ================================
+[2022-06-08 14:12:49.001] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - param: UserVO [uId=p05000, name=김무엘05000, passwd=4321, level=SILVER, login=51, recommend=30, email=rlatkandpf30@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@6d8792db]
+[2022-06-08 14:12:49.001] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - SQL:
+ DELETE FROM hr_member 
+ WHERE u_id = ?        
+
+[2022-06-08 14:12:49.001] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - ================================
+[2022-06-08 14:12:49.002] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:71) - Object param: [Ljava.lang.Object;@64bc21ac
+[2022-06-08 14:12:49.107] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - flag: 0
+[2022-06-08 14:12:49.107] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:65) - ================================
+[2022-06-08 14:12:49.107] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - param: UserVO [uId=p050000, name=김무엘050000, passwd=4321, level=GOLD, login=52, recommend=31, email=rlatkandpf30@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@ce5a68e]
+[2022-06-08 14:12:49.107] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - SQL:
+ DELETE FROM hr_member 
+ WHERE u_id = ?        
+
+[2022-06-08 14:12:49.107] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - ================================
+[2022-06-08 14:12:49.108] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:71) - Object param: [Ljava.lang.Object;@9d157ff
+[2022-06-08 14:12:49.198] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - flag: 1
+[2022-06-08 14:12:49.198] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:189) - ================================
+[2022-06-08 14:12:49.198] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:190) - param: UserVO [uId=p05, name=김무엘05, passwd=4321, level=BASIC, login=49, recommend=0, email=rlatkandpf30@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@63cd604c]
+[2022-06-08 14:12:49.198] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:191) - SQL:
+ INSERT INTO hr_member (  
+     u_id,                
+     name,                
+     passwd,              
+     u_level,    		 
+     login,				 
+     recommend,			 
+     email,				 
+     reg_dt				 
+ ) VALUES (               
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     SYSDATE              
+ )                        
+
+[2022-06-08 14:12:49.198] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:192) - ================================
+[2022-06-08 14:12:49.198] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: p05
+[2022-06-08 14:12:49.198] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 김무엘05
+[2022-06-08 14:12:49.198] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 4321
+[2022-06-08 14:12:49.199] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 1
+[2022-06-08 14:12:49.199] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 49
+[2022-06-08 14:12:49.199] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 0
+[2022-06-08 14:12:49.199] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: rlatkandpf30@naver.com
+[2022-06-08 14:12:49.258] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - flag: 1
+[2022-06-08 14:12:49.258] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:189) - ================================
+[2022-06-08 14:12:49.258] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:190) - param: UserVO [uId=p050, name=김무엘050, passwd=4321, level=BASIC, login=50, recommend=10, email=rlatkandpf30@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@62dae245]
+[2022-06-08 14:12:49.258] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:191) - SQL:
+ INSERT INTO hr_member (  
+     u_id,                
+     name,                
+     passwd,              
+     u_level,    		 
+     login,				 
+     recommend,			 
+     email,				 
+     reg_dt				 
+ ) VALUES (               
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     SYSDATE              
+ )                        
+
+[2022-06-08 14:12:49.258] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:192) - ================================
+[2022-06-08 14:12:49.258] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: p050
+[2022-06-08 14:12:49.259] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 김무엘050
+[2022-06-08 14:12:49.259] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 4321
+[2022-06-08 14:12:49.259] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 1
+[2022-06-08 14:12:49.259] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 50
+[2022-06-08 14:12:49.259] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 10
+[2022-06-08 14:12:49.259] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: rlatkandpf30@naver.com
+[2022-06-08 14:12:49.370] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - flag: 1
+[2022-06-08 14:12:49.370] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:189) - ================================
+[2022-06-08 14:12:49.370] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:190) - param: UserVO [uId=p0500, name=김무엘0500, passwd=4321, level=SILVER, login=51, recommend=29, email=rlatkandpf30@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@591e58fa]
+[2022-06-08 14:12:49.370] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:191) - SQL:
+ INSERT INTO hr_member (  
+     u_id,                
+     name,                
+     passwd,              
+     u_level,    		 
+     login,				 
+     recommend,			 
+     email,				 
+     reg_dt				 
+ ) VALUES (               
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     SYSDATE              
+ )                        
+
+[2022-06-08 14:12:49.370] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:192) - ================================
+[2022-06-08 14:12:49.370] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: p0500
+[2022-06-08 14:12:49.370] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 김무엘0500
+[2022-06-08 14:12:49.370] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 4321
+[2022-06-08 14:12:49.370] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 2
+[2022-06-08 14:12:49.370] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 51
+[2022-06-08 14:12:49.370] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 29
+[2022-06-08 14:12:49.371] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: rlatkandpf30@naver.com
+[2022-06-08 14:12:49.440] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - flag: 1
+[2022-06-08 14:12:49.440] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:189) - ================================
+[2022-06-08 14:12:49.440] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:190) - param: UserVO [uId=p05000, name=김무엘05000, passwd=4321, level=SILVER, login=51, recommend=30, email=rlatkandpf30@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@6d8792db]
+[2022-06-08 14:12:49.440] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:191) - SQL:
+ INSERT INTO hr_member (  
+     u_id,                
+     name,                
+     passwd,              
+     u_level,    		 
+     login,				 
+     recommend,			 
+     email,				 
+     reg_dt				 
+ ) VALUES (               
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     SYSDATE              
+ )                        
+
+[2022-06-08 14:12:49.441] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:192) - ================================
+[2022-06-08 14:12:49.441] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: p05000
+[2022-06-08 14:12:49.441] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 김무엘05000
+[2022-06-08 14:12:49.441] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 4321
+[2022-06-08 14:12:49.441] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 2
+[2022-06-08 14:12:49.441] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 51
+[2022-06-08 14:12:49.441] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 30
+[2022-06-08 14:12:49.441] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: rlatkandpf30@naver.com
+[2022-06-08 14:12:49.498] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - flag: 1
+[2022-06-08 14:12:49.498] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:189) - ================================
+[2022-06-08 14:12:49.498] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:190) - param: UserVO [uId=p050000, name=김무엘050000, passwd=4321, level=GOLD, login=52, recommend=31, email=rlatkandpf30@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@ce5a68e]
+[2022-06-08 14:12:49.498] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:191) - SQL:
+ INSERT INTO hr_member (  
+     u_id,                
+     name,                
+     passwd,              
+     u_level,    		 
+     login,				 
+     recommend,			 
+     email,				 
+     reg_dt				 
+ ) VALUES (               
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     ?,                   
+     SYSDATE              
+ )                        
+
+[2022-06-08 14:12:49.498] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:192) - ================================
+[2022-06-08 14:12:49.498] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: p050000
+[2022-06-08 14:12:49.498] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 김무엘050000
+[2022-06-08 14:12:49.499] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 4321
+[2022-06-08 14:12:49.499] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 3
+[2022-06-08 14:12:49.499] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 52
+[2022-06-08 14:12:49.499] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: 31
+[2022-06-08 14:12:49.499] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:198) - Object param: rlatkandpf30@naver.com
+[2022-06-08 14:12:49.593] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - flag: 1
+[2022-06-08 14:12:49.593] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:152) - =========================
+[2022-06-08 14:12:49.593] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:153) - param: UserVO [uId=p05, name=김무엘05, passwd=4321, level=BASIC, login=49, recommend=0, email=rlatkandpf30@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@63cd604c]
+[2022-06-08 14:12:49.593] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - SQL:
+ SELECT COUNT(*) AS cnt  
+ FROM hr_member          
+ WHERE u_id LIKE ?||'%'  
+
+[2022-06-08 14:12:49.593] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =========================
+[2022-06-08 14:12:49.594] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:158) - Object param: p05
+[2022-06-08 14:12:49.665] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:161) - =count=5
+[2022-06-08 14:12:49.665] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:128) - =========================
+[2022-06-08 14:12:49.665] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:129) - param: UserVO [uId=p05, name=김무엘05, passwd=4321, level=BASIC, login=49, recommend=0, email=rlatkandpf30@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@63cd604c]
+[2022-06-08 14:12:49.666] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:130) - SQL:
+ SELECT                  
+     u_id,               
+     name,               
+     passwd,             
+     u_level,            
+     login,		        
+     recommend,	        
+     email,		        
+     TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt	
+ FROM hr_member          
+ WHERE u_id LIKE ?||'%'  
+ ORDER BY u_id  	        
+
+[2022-06-08 14:12:49.666] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:131) - =========================
+[2022-06-08 14:12:49.666] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:134) - Object param: [Ljava.lang.Object;@15a902e7
+[2022-06-08 14:12:49.735] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p05, name=김무엘05, passwd=4321, level=BASIC, login=49, recommend=0, email=rlatkandpf30@naver.com, regDt=2022-06-08 14:12:49, toString()=com.pcwk.ehr.UserVO@5af28b27]
+[2022-06-08 14:12:49.735] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p050, name=김무엘050, passwd=4321, level=BASIC, login=50, recommend=10, email=rlatkandpf30@naver.com, regDt=2022-06-08 14:12:49, toString()=com.pcwk.ehr.UserVO@71104a4]
+[2022-06-08 14:12:49.735] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p0500, name=김무엘0500, passwd=4321, level=SILVER, login=51, recommend=29, email=rlatkandpf30@naver.com, regDt=2022-06-08 14:12:49, toString()=com.pcwk.ehr.UserVO@4985cbcb]
+[2022-06-08 14:12:49.735] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p05000, name=김무엘05000, passwd=4321, level=SILVER, login=51, recommend=30, email=rlatkandpf30@naver.com, regDt=2022-06-08 14:12:49, toString()=com.pcwk.ehr.UserVO@72f46e16]
+[2022-06-08 14:12:49.735] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p050000, name=김무엘050000, passwd=4321, level=GOLD, login=52, recommend=31, email=rlatkandpf30@naver.com, regDt=2022-06-08 14:12:49, toString()=com.pcwk.ehr.UserVO@3c9168dc]
+[2022-06-08 14:12:49.735] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:92) - ================================
+[2022-06-08 14:12:49.735] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:93) - param: UserVO [uId=p050, name=김무엘050, passwd=4321, level=SILVER, login=50, recommend=10, email=rlatkandpf30@naver.com, regDt=2022-06-08 14:12:49, toString()=com.pcwk.ehr.UserVO@71104a4]
+[2022-06-08 14:12:49.735] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:94) - SQL:
+ UPDATE hr_member       
+ SET name      = ?,     
+     passwd    = ?,     
+     u_level   = ?,     
+     login     = ?,     
+     recommend = ?,     
+     email     = ?,     
+     reg_dt = SYSDATE   
+ WHERE u_id = ?         
+
+[2022-06-08 14:12:49.736] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:95) - ================================
+[2022-06-08 14:12:49.736] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:103) - Object param: 김무엘050
+[2022-06-08 14:12:49.736] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:103) - Object param: 4321
+[2022-06-08 14:12:49.736] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:103) - Object param: 2
+[2022-06-08 14:12:49.736] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:103) - Object param: 50
+[2022-06-08 14:12:49.736] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:103) - Object param: 10
+[2022-06-08 14:12:49.736] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:103) - Object param: rlatkandpf30@naver.com
+[2022-06-08 14:12:49.736] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:103) - Object param: p050
+[2022-06-08 14:12:49.813] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:107) - flag: 1
+[2022-06-08 14:12:49.813] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:92) - ================================
+[2022-06-08 14:12:49.813] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:93) - param: UserVO [uId=p05000, name=김무엘05000, passwd=4321, level=GOLD, login=51, recommend=30, email=rlatkandpf30@naver.com, regDt=2022-06-08 14:12:49, toString()=com.pcwk.ehr.UserVO@72f46e16]
+[2022-06-08 14:12:49.813] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:94) - SQL:
+ UPDATE hr_member       
+ SET name      = ?,     
+     passwd    = ?,     
+     u_level   = ?,     
+     login     = ?,     
+     recommend = ?,     
+     email     = ?,     
+     reg_dt = SYSDATE   
+ WHERE u_id = ?         
+
+[2022-06-08 14:12:49.813] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:95) - ================================
+[2022-06-08 14:12:49.813] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:103) - Object param: 김무엘05000
+[2022-06-08 14:12:49.813] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:103) - Object param: 4321
+[2022-06-08 14:12:49.814] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:103) - Object param: 3
+[2022-06-08 14:12:49.814] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:103) - Object param: 51
+[2022-06-08 14:12:49.814] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:103) - Object param: 30
+[2022-06-08 14:12:49.814] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:103) - Object param: rlatkandpf30@naver.com
+[2022-06-08 14:12:49.814] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:103) - Object param: p05000
+[2022-06-08 14:12:49.915] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:107) - flag: 1
+[2022-06-08 14:12:49.915] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:236) - =========================
+[2022-06-08 14:12:49.915] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:237) - param: UserVO [uId=p05, name=김무엘05, passwd=4321, level=BASIC, login=49, recommend=0, email=rlatkandpf30@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@63cd604c]
+[2022-06-08 14:12:49.915] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:238) - SQL:
+ SELECT          
+     u_id,       
+     name,       
+     passwd,     
+     u_level,    
+     login,		
+     recommend,	
+     email,		
+     TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt	
+ FROM hr_member 	
+ WHERE u_id = ? 	
+
+[2022-06-08 14:12:49.915] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:239) - =========================
+[2022-06-08 14:12:49.916] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:242) - Object param: [Ljava.lang.Object;@5217f3d0
+[2022-06-08 14:12:49.984] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:251) - =========================
+[2022-06-08 14:12:49.984] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:252) - =outVO=UserVO [uId=p05, name=김무엘05, passwd=4321, level=BASIC, login=49, recommend=0, email=rlatkandpf30@naver.com, regDt=2022-06-08 14:12:49, toString()=com.pcwk.ehr.UserVO@2416a51]
+[2022-06-08 14:12:49.984] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:253) - =========================
+[2022-06-08 14:12:49.984] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:236) - =========================
+[2022-06-08 14:12:49.984] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:237) - param: UserVO [uId=p050, name=김무엘050, passwd=4321, level=BASIC, login=50, recommend=10, email=rlatkandpf30@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@62dae245]
+[2022-06-08 14:12:49.984] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:238) - SQL:
+ SELECT          
+     u_id,       
+     name,       
+     passwd,     
+     u_level,    
+     login,		
+     recommend,	
+     email,		
+     TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt	
+ FROM hr_member 	
+ WHERE u_id = ? 	
+
+[2022-06-08 14:12:49.984] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:239) - =========================
+[2022-06-08 14:12:49.984] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:242) - Object param: [Ljava.lang.Object;@6fa590ba
+[2022-06-08 14:12:50.098] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:251) - =========================
+[2022-06-08 14:12:50.098] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:252) - =outVO=UserVO [uId=p050, name=김무엘050, passwd=4321, level=SILVER, login=50, recommend=10, email=rlatkandpf30@naver.com, regDt=2022-06-08 14:12:49, toString()=com.pcwk.ehr.UserVO@7bf9b098]
+[2022-06-08 14:12:50.098] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:253) - =========================
+[2022-06-08 14:12:50.098] DEBUG JunitUserServiceTest.checkLevel(JunitUserServiceTest.java:152) - SILVER===SILVER
+[2022-06-08 14:12:50.098] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:236) - =========================
+[2022-06-08 14:12:50.099] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:237) - param: UserVO [uId=p0500, name=김무엘0500, passwd=4321, level=SILVER, login=51, recommend=29, email=rlatkandpf30@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@591e58fa]
+[2022-06-08 14:12:50.099] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:238) - SQL:
+ SELECT          
+     u_id,       
+     name,       
+     passwd,     
+     u_level,    
+     login,		
+     recommend,	
+     email,		
+     TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt	
+ FROM hr_member 	
+ WHERE u_id = ? 	
+
+[2022-06-08 14:12:50.099] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:239) - =========================
+[2022-06-08 14:12:50.099] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:242) - Object param: [Ljava.lang.Object;@389adf1d
+[2022-06-08 14:12:50.180] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:251) - =========================
+[2022-06-08 14:12:50.180] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:252) - =outVO=UserVO [uId=p0500, name=김무엘0500, passwd=4321, level=SILVER, login=51, recommend=29, email=rlatkandpf30@naver.com, regDt=2022-06-08 14:12:49, toString()=com.pcwk.ehr.UserVO@290b1b2e]
+[2022-06-08 14:12:50.180] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:253) - =========================
+[2022-06-08 14:12:50.180] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:236) - =========================
+[2022-06-08 14:12:50.180] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:237) - param: UserVO [uId=p05000, name=김무엘05000, passwd=4321, level=SILVER, login=51, recommend=30, email=rlatkandpf30@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@6d8792db]
+[2022-06-08 14:12:50.180] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:238) - SQL:
+ SELECT          
+     u_id,       
+     name,       
+     passwd,     
+     u_level,    
+     login,		
+     recommend,	
+     email,		
+     TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt	
+ FROM hr_member 	
+ WHERE u_id = ? 	
+
+[2022-06-08 14:12:50.181] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:239) - =========================
+[2022-06-08 14:12:50.181] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:242) - Object param: [Ljava.lang.Object;@47874b25
+[2022-06-08 14:12:50.285] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:251) - =========================
+[2022-06-08 14:12:50.285] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:252) - =outVO=UserVO [uId=p05000, name=김무엘05000, passwd=4321, level=GOLD, login=51, recommend=30, email=rlatkandpf30@naver.com, regDt=2022-06-08 14:12:49, toString()=com.pcwk.ehr.UserVO@5db4c359]
+[2022-06-08 14:12:50.285] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:253) - =========================
+[2022-06-08 14:12:50.285] DEBUG JunitUserServiceTest.checkLevel(JunitUserServiceTest.java:152) - GOLD===GOLD
+[2022-06-08 14:12:50.285] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:236) - =========================
+[2022-06-08 14:12:50.285] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:237) - param: UserVO [uId=p050000, name=김무엘050000, passwd=4321, level=GOLD, login=52, recommend=31, email=rlatkandpf30@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@ce5a68e]
+[2022-06-08 14:12:50.285] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:238) - SQL:
+ SELECT          
+     u_id,       
+     name,       
+     passwd,     
+     u_level,    
+     login,		
+     recommend,	
+     email,		
+     TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt	
+ FROM hr_member 	
+ WHERE u_id = ? 	
+
+[2022-06-08 14:12:50.285] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:239) - =========================
+[2022-06-08 14:12:50.285] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:242) - Object param: [Ljava.lang.Object;@209775a9
+[2022-06-08 14:12:50.425] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:251) - =========================
+[2022-06-08 14:12:50.425] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:252) - =outVO=UserVO [uId=p050000, name=김무엘050000, passwd=4321, level=GOLD, login=52, recommend=31, email=rlatkandpf30@naver.com, regDt=2022-06-08 14:12:49, toString()=com.pcwk.ehr.UserVO@74cec793]
+[2022-06-08 14:12:50.425] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:253) - =========================
+[2022-06-08 14:12:50.426] DEBUG JunitUserServiceTest.tearDown(JunitUserServiceTest.java:168) - =============
+[2022-06-08 14:12:50.426] DEBUG JunitUserServiceTest.tearDown(JunitUserServiceTest.java:169) - =9.tearDown()=
+[2022-06-08 14:12:50.426] DEBUG JunitUserServiceTest.tearDown(JunitUserServiceTest.java:170) - =============
