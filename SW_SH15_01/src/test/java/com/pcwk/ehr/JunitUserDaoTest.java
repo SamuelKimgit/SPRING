@@ -170,6 +170,7 @@ public class JunitUserDaoTest {
 			UserVO vsUser02 = dao.doSelectOne(user02);
 			isSameUser(vsUser02, user02);
 
+			dao.doRetrieve(user01);
 		} catch (SQLException e) {
 			e.printStackTrace();
 			LOG.debug("===================");
