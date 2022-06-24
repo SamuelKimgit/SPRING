@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pcwk.ehr.board">
+
+  <!-- 조회 건수 증가 : updateReadCnt-->
+  <update id="updateReadCnt" parameterType="BoardVO">
+    UPDATE pc_board
+    SET read_cnt = NVL(read_cnt,0) + 1
+    WHERE seq = #{seq}
+  </update>
+
+  <!-- 수정 -->
+  <update id="doUpdate" parameterType="BoardVO">
+    UPDATE pc_board
+    SET title    = #{title},
+        contents = #{contents},
+        div      = #{div},
+        mod_dt   = SYSDATE,
+        mod_id   = #{modId}
+    WHERE seq    = #{seq}
+  </update>
+
+  <!-- 건수 조회 -->
+  <select id="getCount" parameterType="BoardVO" resultType="int">
+    SELECT COUNT(*) AS cnt
+	  FROM  pc_board
+	  WHERE seq LIKE #{seq} ||'%'
+  </select>
+  
+  <!-- 단건 조회 -->
+  <select id="doSelectOne" parameterType="BoardVO" resultType="BoardVO">
+	  SELECT
+	    seq,
+	    title,
+	    contents,
+	    read_cnt AS readCnt,
+	    div,
+	    TO_CHAR(reg_dt,'yyyy-mm-dd hh24:mi:ss') AS regDt,
+	    reg_id AS regId,
+	    TO_CHAR(mod_dt,'yyyy-mm-dd hh24:mi:ss') AS modDt,
+	    mod_id AS modId
+	  FROM pc_board
+	  WHERE seq = #{seq}
+  </select>
+  
+  <!-- 단건 삭제 -->
+  <delete id="doDelete" parameterType="BoardVO">
+	  DELETE FROM pc_board
+	  WHERE seq = #{seq}
+  </delete>
+  
+  <!-- 등록 -->
+  <insert id="doInsert" parameterType="BoardVO">
+	  INSERT INTO pc_board (
+	    seq,
+	    title,
+	    contents,
+	    read_cnt,
+	    div,
+	    reg_id,
+	    mod_id
+	  ) VALUES (
+	    #{seq},
+	    #{title},
+	    #{contents},
+	    #{readCnt},
+	    #{div},
+	    #{regId},
+	    #{modId}
+	  )
+  </insert>
+  
+</mapper>
